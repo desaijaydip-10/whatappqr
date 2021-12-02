@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constrainlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/reletivelayout"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/cropimg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher"/>
+
+
+        <ImageView
+            android:id="@+id/refreshimg"
+            android:layout_toLeftOf="@id/cropimg"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@mipmap/ic_launcher"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/reletivelayout"
+
+   />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
